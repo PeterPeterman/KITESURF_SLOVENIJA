@@ -1,0 +1,263 @@
+*{margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-image:url(images/Neretva_kiteboarding05-1200x674.jpg)
+}
+.section{
+  display: grid;grid-template-columns: auto;
+}
+nav{
+  display: flex;
+  padding:0;
+  justify-content: space-between;
+  background-color:transparent;
+}
+
+nav img{
+  height: 150px;
+  mix-blend-mode: multiply;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+  margin-right: 10px;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 60px 10px;
+  text-align: center;
+}
+.nav-links ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  
+}
+.nav-links ul li a:hover{
+  width: 100%;
+  display: block;
+  color:black;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.nav-links ul li a:active{
+  width: 100%;
+  display: block;
+  color: black;
+  transition: 0.5s;
+  text-decoration: underline;
+  opacity: 0.5;
+}
+.text-box{
+  width: 100%;
+  color:black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center
+}
+.text-box h1{
+  font-size:62px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+.text-box p{
+  font-size: 20px;
+  margin: 5px 0 5px;
+  font-weight: bold;
+}
+
+.Več-o-kajtanju{
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 14px;
+  font-size: 16px;
+  color: black;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border: solid;
+font-weight: bold;
+margin-top: 20px;
+}
+
+.Več-o-kajtanju:hover{
+  background-color:gray;
+  transition: 1s;
+  border: 2px solid;
+}
+
+nav .fa{
+  display: none;
+}
+
+
+
+
+
+@media(max-width: 700px){
+  .text-box h1{
+    font-size:40px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+  }
+  .nav-links ul li{
+    display: block;
+    padding: 20px 20px;    
+
+  }
+  .nav-links{
+    position:absolute;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: -20px;
+    text-align: left;
+    z-index: 2;
+    background-color: gray;
+    transition: 0.8s;
+    margin-right: 0px;
+  }
+  .text-box p{
+    font-size: 16px;
+    margin: 10px 10px 10px;
+    font-weight: bold;
+  }
+  nav .fa{
+    display: block;
+    margin: 22px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+}
+
+/*-----------------stran-oprema----------------------*/
+
+
+.stran-oprema{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+}
+
+h1{
+  font-size: 36px;
+  line-height: 22px;
+  padding: 10px;
+}
+p{
+font-size: 14px;
+padding: 10px;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+h3{
+  text-align: center;
+}
+
+.oprema{
+  margin-top: 5%;
+  justify-content: space-between;
+  
+}
+
+.vrstica-bar, .vrstica-deska, .vrstica-padalo{
+  border-color: black;
+  padding-top: 10px;
+  background-color:rgb(195, 177, 242);
+  margin: 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.vrstica-bar:hover, .vrstica-deska:hover, .vrstica-padalo:hover{
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.slika-oprema{
+  height:200px;
+}
+
+
+/*---------------stran-spoti-------------------*/
+.slika-grado, .slika-neretva{
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 80%;
+  left: 10%;
+  top: 0;
+  position: absolute;
+  border-radius: 10px;
+}
+
+
+
+.spoti-neretva, .spoti-grado{
+  background-color: lightblue;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+
+.spoti-neretva:hover, .spoti-grado:hover{
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.stran-spoti{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  }
+  
+  h1{
+    font-size: 36px;
+    line-height: 22px;
+    padding: 10px;
+  }
+  p{
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  }
+  h3{
+    text-align: center;
+    margin-top:10px;
+    padding-top: 10px;
+  }
+
+
+  
+  
+
+
